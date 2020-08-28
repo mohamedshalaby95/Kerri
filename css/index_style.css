@@ -1,0 +1,290 @@
+:root{
+    --main--color:#e65f78;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+}
+
+/* navbar start */
+.navbar{
+    width: 100%;
+    z-index: 9;
+}
+.navbar a{
+    text-transform: capitalize;
+}
+/* navbar end */
+
+/* start style home */
+.home{
+    background-image: url("../images/kerri/kerri/header-bg.jpg");
+    background-size: 100% 100%;
+    background-size: 100% 100%;
+    height:100vh;
+    color: white;
+ 
+}
+.home .overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.home .overlay .caption{
+  height: 100%;
+}
+.home .overlay .caption p{
+    width: 35%;
+    text-align: center;
+
+}
+.home .overlay .cv{
+    border: 2px solid #f5f5f5;
+    border-radius: 30px;
+    padding: 15px 32px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    transition-duration: 1s;
+}
+
+.home .overlay .cv:hover{
+    background-color: white;
+    color: black;
+    transition-duration: 1s;
+}
+.home .overlay .setting{
+    padding:10px;
+    background-color:unset;
+    position: fixed;
+    top:30%;
+    left: 0px;
+    
+
+}
+.home .overlay .scroll{
+    position: absolute;
+    bottom:0;
+    left: 50%;
+    height: 44px;
+    width: 28px;
+    border-radius: 30px;
+    border: 2px solid #ffffff;
+    animation-name: scroll;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+}
+.home .overlay .scroll::after{
+    position: absolute;
+    content: "";
+    left: 40%;
+    bottom:5px;
+    width: 5px;
+    height: 20px;
+    background-color: #f5f5f5;
+}
+
+@keyframes scroll{
+    0%{bottom:0px;}
+    25%{bottom:15px;}
+    50%{bottom:30px;}
+    75%{bottom:15px;}
+    100%{bottom:0px}
+
+}
+@media(max-width:991px){
+    .home .overlay .caption p{
+        width: 50%;
+        text-align: center;
+    
+    }
+}
+
+/* end style home */
+
+/* about style start */
+
+.about .about_caption{
+    text-transform: uppercase;
+
+}
+
+.about .about_image img{
+    box-shadow:3px 3px 5px 6px #ccc;
+}
+.about .about_caption h2{
+    font-weight: 500;
+    font-size: 2rem;
+
+    
+}
+.about .about_caption mark{
+    background-color: #ffffff;
+    color: var(--main--color);
+}
+.about .about_caption p{
+    color: #6c757d;
+    font-size: 14px;
+
+}
+.about .about_caption ul li {
+    list-style: none;
+   margin-left: 10px;
+}
+.about .about_caption ul li a{
+    text-decoration: none;
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 50%;
+    color: black;
+}
+
+.about .about_caption ul li:hover a{
+    color: var(--main--color);
+    border-color: var(--main--color);
+
+}
+@media(max-width:991px){
+    .about .about_caption h2{
+        margin-top: 20px;
+    
+        
+    }
+    .about .about_caption h3{
+      padding-bottom: 20px;
+      padding-top: 20px;
+    
+        
+    }
+}
+
+/* about style end*/
+
+ /* service style start */
+.serivce .overlay{
+    text-transform:capitalize;
+
+}
+.serivce .overlay p{
+    color: #6c757d!important;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.serivce .overlay h3{
+    margin: 20px;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.serivce .overlay i{
+    color: var(--main--color);
+}
+.serivce .overlay .caption{
+    margin: 30px;
+   
+    padding: 20px;
+    box-shadow: 2px 2px 2px 2px grey;
+}
+.freelancer{
+    background-color: #ffffff;
+}
+
+/* service style end */
+
+/* client style start */
+.client ol li {
+background-color: var(--main--color);
+}
+/* client style end */
+
+/* portfolio style start */
+
+.portfolio ol {
+   bottom: -50px;
+
+    
+}
+.portfolio ol  li{
+background-color: var(--main--color);
+}
+.portfolio  ul li{
+  
+    text-transform: uppercase;
+    
+  
+
+}
+
+.portfolio ul li a{
+    
+    cursor: pointer;
+    display: block;
+    border-radius: 30px !important;
+    letter-spacing: 0.03em;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 6px 16px;
+    transition: all 0.5s;
+    margin-top: 5px;
+    color:black;
+    background-color: unset
+}
+.portfolio ul li a:hover , .nav .nav-item .active{
+    background-color: var(--main--color);
+    color:white;
+}
+.portfolio .portfolio_images{
+    margin-bottom: 20px;
+    
+   
+}
+
+
+
+/* portfolio style end */
+
+/* start blog style */
+
+.blog .blog_caption span{
+    color: var(--main--color);
+    font-size: 1.5rem;
+}
+
+
+/* end blog style */
+
+
+/* start contact style */
+
+.contact .contact_way i{
+    color:var(--main--color)
+}
+
+/* end contact style */
+
+
+/*footer start style*/
+.foot{
+    text-align: center;
+    margin-top: 50px;
+    background-color:rgba(0, 0, 0, .8);
+    color: white;
+
+
+}
+
+.foot p{
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+.foot span{
+    color:red; 
+}
+.foot .fa-2x{
+    margin: 30px 0px 30px;
+   
+}
+/*footer end style*/
