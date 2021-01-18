@@ -94,13 +94,7 @@ body{
     100%{bottom:0px}
 
 }
-@media(max-width:991px){
-    .home .overlay .caption p{
-        width: 50%;
-        text-align: center;
-    
-    }
-}
+
 
 /* end style home */
 
@@ -146,19 +140,7 @@ body{
     border-color: var(--main--color);
 
 }
-@media(max-width:991px){
-    .about .about_caption h2{
-        margin-top: 20px;
-    
-        
-    }
-    .about .about_caption h3{
-      padding-bottom: 20px;
-      padding-top: 20px;
-    
-        
-    }
-}
+
 
 /* about style end*/
 
@@ -288,3 +270,35 @@ background-color: var(--main--color);
    
 }
 /*footer end style*/
+@media  screen and (max-width:668px){
+    
+    .portfolio_heading p{
+        width: 100% !important;
+    }
+    .heading-pragraph{
+        width:100% !important;
+    }
+}
+@media  screen and (max-width:991px){
+    .home .overlay .caption p{
+        width: 50%;
+        text-align: center;
+    
+    }
+    .home .overlay .setting{
+         background-color: black;
+         z-index:8;
+    }
+    .about .about_caption h2{
+        margin-top: 20px;
+    
+        
+    }
+    .about .about_caption h3{
+      padding-bottom: 20px;
+      padding-top: 20px;
+    
+        
+    }
+    
+}
